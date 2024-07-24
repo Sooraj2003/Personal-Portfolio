@@ -1,38 +1,302 @@
-.App {
-  text-align: center;
+body{
+  position: relative;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: azure;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  display:block;
+  height:100px ;
+  width: 100px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar ul{
+  
   display: flex;
-  flex-direction: column;
-  align-items: center;
+position: absolute;
+  flex-direction: row;
+  left:50%;
+  list-style: none;
+  
+  font-weight:bold;
+  
+}
+.navbar li{
+  display: block;
+  padding: 32px;
+  
+  width: 100px;
+ 
+}
+.navbar a{
+  
+ font-size: 22px;
+ display: inline-block;
+ width: 22.5px;
+
+ 
+}
+.navbar a:hover{
+font-size: 22.5px;
+}
+.home {
+  
+  position:absolute;
+  left: 10%;
+  top:150px;
+  font-size: 40px;
+  font-weight: bolder;
+
+  
+}
+
+.home ul{
+
+  height: 90px;
+ 
+  line-height: 90px;
+  list-style: none;
+  padding-left: 0;
+  
+
+
+
+
+
+  
+ 
+}
+
+
+
+.home li{
+  display: block;
+  position: relative; 
+  overflow: hidden;
+}
+.home li::after{
+  content: "";
+  position: absolute;
+  border-left: 20px solid azure;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: typing 3s steps(17) infinite;
+  background-color: black;
+  
+
+
+}
+@keyframes typing {
+100%{
+  left:105%;
+}
+
+}
+.flex-box{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.home-img img{
+  width:350px;
+  height:350px;
+  border-radius: 30%;
+  margin-left: 800px;
+  margin-top: 80px;
+  border: 20px solid white;
+  transform: rotateY(0);
+ transition: all 2s linear;
+ backface-visibility:visible;
+  
+}
+.home-img:hover img{
+  transform: rotateY(180deg);
 }
 
-.App-link {
-  color: #61dafb;
+.slider{
+  display: flex;
+  position: absolute;
+  justify-content:center;
+  align-items: center;
+  width: 80%;
+  left:150px;
+  margin: 30px 0;
+  margin-top: 0;
+  overflow: none;
+  transform: translateX(0);
+  animation: slide 8s linear infinite;
+  animation-direction: alternate;
+ 
+  
+}
+@keyframes slide {
+  100%{
+    transform: translateX(-1200px);
+   
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.slider .slide{
+  text-align: center;
+  padding: 50px 50px;
+
+}
+.slide img{
+  width:350px;
+  height: 350px;
+  
+}
+.slider:hover{
+  animation-play-state: paused;
+  
+}
+.slide  {
+perspective: 1000px;
+
+}
+.slide img{
+  transition: transform 1s linear;
+}
+.slide h2{
+  transition: transform 1s linear;
+}
+.slide:hover img{
+  transform: translateZ(120px);
+}
+.slide:hover h2{
+  transform: translateZ(80px);
+}
+
+
+
+.skill-heading h1{
+  text-align: center;
+  font-size: 80px;
+  font-weight: bolder;
+ 
+}
+.skill-heading h1{
+
+  margin: 200px 0 0 0;
+  margin-bottom: 0;
+  
+}
+.skill-container h1 span{
+  position: relative;
+  top:-900px;
+}
+
+
+.skill-container:hover h1 span{
+animation: falling 1s ease-in-out forwards  ;
+
+
+}
+
+@keyframes falling {
+
+  100%{
+    top:0;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+}
+.skill-container:hover h1 span:nth-child(2){
+  animation-delay: 0.07s;
+}
+
+.skill-container:hover h1 span:nth-child(3){
+  animation-delay: 0.14s;
+}
+.skill-container:hover h1 span:nth-child(4){
+  animation-delay: 0.21s;
+}
+.skill-container:hover h1 span:nth-child(5){
+  animation-delay: 0.28s;
+}
+.skill-container:hover h1 span:nth-child(6){
+  animation-delay: 0.35s;
+}
+.skill-container:hover h1 span:nth-child(7){
+  animation-delay: 0.42s;
+}
+.skill-container:hover h1 span:nth-child(8){
+  animation-delay: 0.49s;
+}
+.skill-container:hover h1 span:nth-child(9){
+  animation-delay: 0.56s;
+}
+.skill-container:hover h1 span:nth-child(10){
+  animation-delay: 0.63s;
+}
+.skill-container:hover h1 span:nth-child(11){
+  animation-delay: 0.70s;
+}
+.skill-container:hover h1 span:nth-child(12){
+  animation-delay: 0.77s;
+}
+.skill-container:hover h1 span:nth-child(13){
+  animation-delay: 0.84s;
+}
+.skill-container:hover h1 span:nth-child(14){
+  animation-delay: 0.91s;
+}
+.skill-container:hover h1 span:nth-child(15){
+  animation-delay: 1.05s;
+}
+.skill-container:hover h1 span:nth-child(16){
+  animation-delay: 1.12S;
+}
+.skill-container:hover h1 span:nth-child(17){
+  animation-delay: 1.19s;
+}
+.skill-container:hover h1 span:nth-child(18){
+  animation-delay: 1.26s;
+}
+.skill-container:hover h1 span:nth-child(19){
+  animation-delay: 1.33s;
+}
+.skill-container:hover h1 span:nth-child(20){
+  animation-delay: 1.4s;
+}
+.grid{
+  position: relative;
+  top:500px;
+}
+
+.grid{
+margin-top:0%;
+ height: 200px;
+ width: 80%;
+ padding: 10%;
+ padding-left: 10%;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: medium;
+ font-weight: bold;
+  
+}
+.grid-container-front{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 100px 100px;
+  grid-gap:20px;
+  justify-content: space-around;
+}
+.grid-container-reverse{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 100px 100px;
+  grid-gap:20px;
+  justify-content: space-around;
+}
+.grid-item{
+  margin-top: 8%;
+}
+.grid  h1{
+font-size: 50px;
+font-weight: bolder;
+text-align: center;
+
 }

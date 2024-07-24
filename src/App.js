@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar/>
+    <Home/>
+    <Skills/>
+    <Projects/>
+    {/* <a href="https://iconscout.com/icons/html5" target="_blank">Html5 Icon</a> by <a href="https://iconscout.com/contributors/unicons" target="_blank">Unicons Font</a> */}
+    </>
   );
 }
 
