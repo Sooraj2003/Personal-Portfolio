@@ -36,43 +36,43 @@ export default function Skills(){
         <div className="slider">
            <h1>I'm  good at</h1>
            <div className="slide">
-             <img src="/images/html5 (2).png"/>
+             <img alt="" src="/images/html5 (2).png"/>
              <h2>HTML5</h2>
            </div>
            <div className="slide">
-             <img src="/images/css3.png"/>
+             <img alt="" src="/images/css3.png"/>
              <h2>CSS3</h2>
            </div>
            <div className="slide">
-             <img src="/images/java-script.png"/>
+             <img alt="" src="/images/java-script.png"/>
              <h2>JS</h2>
            </div>
            <div className="slide">
-             <img src="/images/node-js.png"/>
+             <img alt="" src="/images/node-js.png"/>
              <h2>NODE JS</h2>
            </div>
            <div className="slide">
-             <img src="/images/react.png"/>
+             <img alt="" src="/images/react.png"/>
              <h2>REACT</h2>
            </div>
            <div className="slide">
-             <img src="/images/html5 (2).png"/>
+             <img alt="" src="/images/html5 (2).png"/>
              <h2>HTML5</h2>
            </div>
            <div className="slide">
-             <img src="/images/css3.png"/>
+             <img alt="" src="/images/css3.png"/>
              <h2>CSS3</h2>
            </div>
            <div className="slide">
-             <img src="/images/java-script.png"/>
+             <img alt="" src="/images/java-script.png"/>
              <h2>JS</h2>
            </div>
            <div className="slide">
-             <img src="/images/node-js.png"/>
+             <img alt="" src="/images/node-js.png"/>
              <h2>NODE JS</h2>
            </div>
            <div className="slide">
-             <img src="/images/react.png"/>
+             <img alt="" src="/images/react.png"/>
              <h2>REACT</h2>
            </div>
 
