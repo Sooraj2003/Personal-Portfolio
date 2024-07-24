@@ -2,14 +2,14 @@ import { useState } from "react"
 
 
 export default function Skills(){
-    
+
 
     return(
         <div className="skill-container" >
-       
+
         <div className="skill-heading"  >
-            
-            
+
+
             <h1>
             <span>I</span>
             <span>'</span>
@@ -31,7 +31,7 @@ export default function Skills(){
             <span> </span>
             <span>!</span>
            </h1>
-           
+
         </div>
         <div className="slider">
            <h1>I'm  good at</h1>
@@ -75,7 +75,7 @@ export default function Skills(){
              <img src="/images/react.png"/>
              <h2>REACT</h2>
            </div>
-           
+
         </div>
         </div>
     )
